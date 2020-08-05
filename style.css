@@ -1,0 +1,95 @@
+body {
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/strange-hand-drawn-monster-with-flowers-popmarleo.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.centered {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -200px;
+    text-align: center;
+}
+
+.centered h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+.centered h2 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.centered footer {
+    padding: 10px;
+}
+
+.centered footer p {
+    font-weight: normal;
+}
+
+.centered footer a {
+    text-decoration: none;
+    color: rgb(119, 93, 93);
+}
+
+.centered footer a:hover {
+    color: red;
+}
+
+.centered h3 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 5px;
+}
+
+ul li {
+    display: inline;
+    font-size: 30px;
+}
+
+ol {
+    list-style-position: inside;
+    padding: 5px;
+}
+
+ol li {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+
+hr {
+    width: 200px;
+    height: 55px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("images/snake.png");
+  }
+
+  body main div article {
+      background-color: rgb(246, 212, 217);
+      opacity: 0.95;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      border: solid;
+  }
+
+  .copyright {
+    position: absolute; 
+    bottom: 0;
+    padding: 2px;
+  }
+ 
