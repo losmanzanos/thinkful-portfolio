@@ -21,6 +21,11 @@ body {
     font-size: 25px;
 }
 
+.about header p {
+    font-family: 'Indie Flower', cursive;
+    padding: 5px;
+}
+
 .centered h2 {
     padding: 10px;
     font-weight: bold;
