@@ -5,54 +5,66 @@ body {
     height: 90vh;
 }
 
-.centered {
+main {
     position: absolute;
     width: auto;
     height: 100px;
     left: 50%;
     top: 50%;
-    margin-left: -129px;
-    margin-top: -200px;
+    margin-left: -133px;
+    margin-top: -250px;
     text-align: center;
 }
 
-.centered h1 {
-    font-family: 'Indie Flower', cursive;
-    font-size: 25px;
+/*
+==========================
+About content
+==========================
+*/
+
+.about {
+    background-color: rgb(246, 212, 217);
+    opacity: 0.95;
+    padding: 20px;
+    border: solid;
 }
 
-.about header p {
-    font-family: 'Indie Flower', cursive;
-    padding: 5px 20px;
+header {
+    padding-bottom: 20px;
 }
 
-.centered h2 {
-    padding: 10px;
-    font-weight: bold;
-    font-size: 22px;
+header p {
+    font-size: 17px;
 }
 
-.centered footer {
-    padding: 10px;
+h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
-.centered footer p {
-    font-weight: normal;
-}
-
-.centered footer a {
-    text-decoration: none;
-    color: rgb(119, 93, 93);
-}
-
-.centered footer a:hover {
-    color: red;
-}
-
-.centered h3 {
-    padding: 10px;
+h2 {
     font-size: 20px;
 }
+
+h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;
+} 
+
+p {
+    font-family: 'Dosis', sans-serif;
+}
+
+/*
+==========================
+LISTS!
+==========================
+*/
 
 ul {
     list-style: none;
@@ -61,7 +73,7 @@ ul {
 
 ul li {
     display: inline;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 ol {
@@ -70,32 +82,112 @@ ol {
 }
 
 ol li {
-    font-family: 'Indie Flower', cursive;
-    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
 }
 
+.interests {
+    padding-bottom: 15px;
+}
+
+.skills{
+    padding-bottom: 5px;
+}
+
+/*
+==========================
+Horizontal rule
+==========================
+*/
 
 hr {
     width: 200px;
     height: 55px;
     border: none;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-image: url("images/snake.png");
-  }
+}
 
-  body main div article {
-      background-color: rgb(246, 212, 217);
-      opacity: 0.95;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      border: solid;
-  }
+/*
+==========================
+Contact
+==========================
+*/
 
-  .copyright {
+footer {
+    padding-top: 10px;
+}
+
+/*
+==========================
+Copyright
+==========================
+*/
+
+.copyright {
     position: absolute; 
     bottom: 0;
     padding: 2px;
-  }
- 
+}
+
+/*
+Consider making the link color darker...???
+*/
+
+a {
+    text-decoration: none;
+    color: rgb(119, 93, 93);
+}
+
+a:hover {
+    color: red;
+    font-weight: bolder;
+}
+
+a:active {
+    color: rgb(255, 50, 255);
+}
+
+/*
+==========================
+Popup content
+==========================
+*/
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#popup {
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -165px;
+    text-align: center;
+    border: solid;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 10px 10px 3px;
+}
+
+#popup p {
+    padding-bottom: 10px;
+}
+
+#popup button {
+    margin: 10px;
+}
+
+a:hover {
+    cursor: url('images/hot-dog.png'), default;	
+}
