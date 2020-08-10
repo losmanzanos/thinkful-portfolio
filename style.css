@@ -136,6 +136,10 @@ a:active {
     color: rgb(255, 50, 255);
 }
 
+a:visited {
+    color: rgb(143, 85, 197);
+}
+
 /*
 ==========================
 Popup content
