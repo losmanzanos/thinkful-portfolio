@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chad Moravec is an aspiring software engineer, with a penchant for making rad things..."> 
     <title>chad moravec</title>
+    <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,9 +15,9 @@
         <div id="popup">
             <p>for those who asked for it, here is some more information about me...</p>
             <p>i'm based out of denver, co., and i'm powered by lots of ☕</p>
-            <p>when i'm not hacking away on my computer, i enjoy painting, and playing with my dog.</p>
-            <p>feel like i'd be a good fit for your next project? you're probably right!</p>
-            <button onclick="document.getElementById('popup').style.opacity=0">hide me</button>
+            <p>when i'm not hacking away on my computer, i enjoy making art, and playing with my <a href="images/pumpkin.jpg" target="_blank">dog</a>.</p>
+            <p>feel like i'd be a good fit for your next project? you're probably right! let's <a href="mailto:dahc.reverse@gmail.com?subject=YOU%20ROCK!">chat!</a></p>
+            <button class="hide" onclick="document.getElementById('popup').style.display='none'">hide me</button>
         </div>
 
         <div class="about">
@@ -64,18 +64,18 @@
             <!-- contact footer -->
             
             <footer class="contact">
-                <p>contact me at:<br>
-                <a href="mailto:dahc.reverse@gmail.com?subject=YOU%20ROCK!">dahc.reverse@gmail.com</a></p><br>
+                <p>contact me at:</p>
+                <p><a href="mailto:dahc.reverse@gmail.com?subject=YOU%20ROCK!">dahc.reverse@gmail.com</a></p><br>
                 <p>my <a href="https://github.com/losmanzanos" target="_blank">GitHub</a></p>
                 <!-- insert future Linkedin here! -->
             </footer>
 
         </div>
+      </main>
 
-        <!-- click to reveal popup -->
+    <!-- click to reveal popup -->
 
-        <button class="btn" onclick="document.getElementById('popup').style.opacity=1"><img src="images/face.png" alt="click to learn more about Chad" width="165"></button>
-    </main>
+    <button class="btn" onclick="document.getElementById('popup').style.display='block'"><img src="images/face.png" alt="click to learn more about Chad" width="165"></button>
 
     <!-- copyright footer -->
 

@@ -1,19 +1,15 @@
 body {
     background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/strange-hand-drawn-monster-with-flowers-popmarleo.jpg');
     background-repeat: no-repeat;
-    overflow: hidden;
-    height: 90vh;
+    background-size: auto;
 }
 
 main {
-    position: absolute;
-    width: auto;
-    height: 100px;
-    left: 50%;
-    top: 50%;
-    margin-left: -133px;
-    margin-top: -250px;
+    position: flex;
+    flex-direction: row;
+    width: 300px;
     text-align: center;
+    margin: 50px auto;
 }
 
 /*
@@ -25,39 +21,37 @@ About content
 .about {
     background-color: rgb(246, 212, 217);
     opacity: 0.95;
-    padding: 20px;
     border: solid;
-}
-
-header {
-    padding-bottom: 20px;
+    padding: 10px;
 }
 
 header p {
-    font-size: 17px;
-}
-
-h1 {
-    font-size: 30px;
-    padding-bottom: 10px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: lighter;
-    padding-bottom: 10px;
+  font-size: 18px;
 }
 
 h1, h2, h3 {
     font-family: 'Indie Flower', cursive;
 } 
 
+h1 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
 p {
-    font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  padding-bottom: 5px;
 }
 
 /*
@@ -66,9 +60,13 @@ LISTS!
 ==========================
 */
 
+h2 {
+  margin-top: 10px;
+}
+
 ul {
     list-style: none;
-    padding: 5px;
+    padding: 10px;
 }
 
 ul li {
@@ -78,20 +76,12 @@ ul li {
 
 ol {
     list-style-position: inside;
-    padding: 5px;
+    padding: 10px;
 }
 
 ol li {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
-}
-
-.interests {
-    padding-bottom: 15px;
-}
-
-.skills{
-    padding-bottom: 5px;
 }
 
 /*
@@ -106,18 +96,8 @@ hr {
     border: none;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-image: url("images/snake.png");
-}
-
-/*
-==========================
-Contact
-==========================
-*/
-
-footer {
-    padding-top: 10px;
 }
 
 /*
@@ -127,9 +107,11 @@ Copyright
 */
 
 .copyright {
-    position: absolute; 
-    bottom: 0;
-    padding: 2px;
+    position: fixed;
+    bottom: -12px;
+    left: -10px;
+    padding: 0;
+
 }
 
 /*
@@ -165,19 +147,24 @@ Popup content
     right: 0;
 }
 
+.btn:hover {
+    cursor: url('images/light.png'), default;
+}
+
 #popup {
-    opacity: 0;
+    display: none;
     position: absolute;
     z-index: 100;
-    width: 300px;
-    left: 50%;
-    top: 50%;
-    margin-left: -165px;
+    width: 320px;
+    padding: 10px;
+    margin: auto;
+    margin-left: -22.5px;
+    margin-top: 60px;
     text-align: center;
     border: solid;
     background-color: white;
-    padding: 10px;
     box-shadow: 5px 10px 10px 3px;
+    font-family: 'Dosis', sans-serif;
 }
 
 #popup p {
@@ -190,4 +177,12 @@ Popup content
 
 a:hover {
     cursor: url('images/hot-dog.png'), default;	
+}
+
+footer {
+  margin: 15px;
+}
+
+.hide {
+  cursor: url('images/bomb.png'), default;
 }
