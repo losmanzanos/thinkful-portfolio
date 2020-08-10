@@ -25,10 +25,6 @@ About content
     padding: 10px;
 }
 
-header p {
-  font-size: 18px;
-}
-
 h1, h2, h3 {
     font-family: 'Indie Flower', cursive;
 } 
@@ -46,6 +42,10 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: lighter;
+}
+
+header p {
+    font-size: 18px;
 }
 
 p {
@@ -84,10 +84,6 @@ ol li {
     font-size: 16px;
 }
 
-ol li a {
-    color: rgb(10, 97, 212);
-}
-
 /*
 ==========================
 Horizontal rule
@@ -118,26 +114,26 @@ Copyright
 
 }
 
-/*
-Consider making the link color darker...???
-*/
-
 a {
     text-decoration: none;
+}
+
+a:link {
     color: rgb(10, 97, 212);
+}
+
+a:visited {
+    color: rgb(143, 85, 197);
 }
 
 a:hover {
     color: red;
     font-weight: bolder;
+    cursor: url('images/hot-dog.png'), default;
 }
 
 a:active {
     color: rgb(255, 50, 255);
-}
-
-a:visited {
-    color: rgb(143, 85, 197);
 }
 
 /*
@@ -181,10 +177,6 @@ Popup content
 
 #popup button {
     margin: 10px;
-}
-
-a:hover {
-    cursor: url('images/hot-dog.png'), default;	
 }
 
 footer {
