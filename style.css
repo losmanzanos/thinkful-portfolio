@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    position: flex;
+    position: sticky;
     flex-direction: row;
     width: 300px;
     text-align: center;
@@ -84,6 +84,10 @@ ol li {
     font-size: 16px;
 }
 
+ol li a {
+    color: rgb(10, 97, 212);
+}
+
 /*
 ==========================
 Horizontal rule
@@ -120,7 +124,7 @@ Consider making the link color darker...???
 
 a {
     text-decoration: none;
-    color: rgb(119, 93, 93);
+    color: rgb(10, 97, 212);
 }
 
 a:hover {
